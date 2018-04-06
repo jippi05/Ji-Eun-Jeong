@@ -1,0 +1,69 @@
+<html>
+  <head>
+      <title>Media query demo</title>
+    <style>
+     section {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       height: 100vh;
+     }
+      div {  flex: 200px;
+         margin: 1px;
+      background: red;
+}
+  @media (max-width: 1024px) {
+    div {       background: green;}
+  }
+  @media (max-width: 600px) {
+    section {
+      flex-direction: column;
+    }
+    div {       background: blue;
+     }
+     .none { display: none;}
+  }
+  /* The animation code */
+@keyframes example{
+    0% {background-color: pink; }
+    50% {background-color: skyblue;}
+    100% {background-color: pink;}
+}
+
+/* The element to apply the animation to */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+    </style>
+
+  </head>
+  <body>
+
+    <section>
+
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+
+    </section>
+
+  </body>
+</html>
