@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <style>
+
+  body{margin:0;}
+
+  div {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .trigger{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin:auto;
+  }
+
+  .sky{background: linear-gradient(to bottom, #66dce4, #e7e2a6);
+    /*transition: background-color 1000ms ease-in-out 0s;*/
+    transition: opacity 4s ease-in-out;
+    opacity: 1;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    pointer-events: none;
+  }
+
+  .trigger:hover .sky{
+    opacity:0;
+  }
+
+  .sky_night{background: linear-gradient(to bottom, #090c22, #292b49);
+    z-index: -1;}
+
+
+
+
+  .sun{
+    width: 200px;
+    height: 200px;
+    background: #fffbed;
+    border-radius: 100px;
+    margin:auto;
+    transition: transform 4s ease-in-out 0s;
+    pointer-events: none;
+  }
+
+  .trigger:hover .sun{
+    transform: translateY(500px);
+  }
+
+  .down{margin-top:50px;}
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+<div class="sky_night">
+  <div class="trigger">
+    <div class="sky">
+        <div class="sun"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
